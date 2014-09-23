@@ -111,6 +111,9 @@ WriteMakefile(
     NAME            => 'Event::Lib',
     VERSION_FROM    => 'lib/Event/Lib.pm', 
     PREREQ_PM       => {}, 
+    BUILD_REQUIRES  => {
+        'Test::SharedFork' => 0,
+    },
     ABSTRACT_FROM   => 'lib/Event/Lib.pm', 
     AUTHOR	    => 'Tassilo von Parseval <tassilo.von.parseval@rwth-aachen.de>',
     LIBS            => [ $args{LIBS} ], 
