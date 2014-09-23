@@ -939,7 +939,7 @@ CODE:
 
     gettimeofday(&now, NULL);
     
-    if (!evtimer_pending(&args->ev, &tv))
+    if (!evtimer_initialized(&args->ev) || !evtimer_pending(&args->ev, &tv))
 	XSRETURN_NO;
     
     if (tv.tv_sec == 0 && tv.tv_usec == 0)
