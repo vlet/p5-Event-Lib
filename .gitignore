@@ -1,0 +1,13 @@
+Makefile
+Makefile.old
+blib/
+MYMETA.*
+*.swp
+a.out
+config.c
+const-c.inc
+Lib.bs
+Lib.c
+Lib.o
+pm_to_blib
+Event-Lib-*
