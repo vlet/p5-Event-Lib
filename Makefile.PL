@@ -89,7 +89,7 @@ Couldn't find libevent which is required
 for this module.
 
 To obtain it, go to
-    http://www.monkey.org/~provos/libevent/
+    http://libevent.org/
 *******************************************
 EOD
 }
