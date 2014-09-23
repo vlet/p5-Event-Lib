@@ -255,7 +255,7 @@ int  EVENT_INIT_DONE = -1;  /* we use the pid here */
 
 #define event_do_init()	    \
 {\
-    int _pid_ = SvIV(get_sv("$", FALSE)); \
+    int _pid_ = getpid(); \
     if (!EVENT_INIT_DONE  || EVENT_INIT_DONE != _pid_) {\
 	event_init();	\
 	DEBUG_init_pending(aTHX);   \
