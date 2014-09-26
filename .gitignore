@@ -3,6 +3,7 @@ Makefile.old
 blib/
 MYMETA.*
 *.swp
+*.bak
 a.out
 config.c
 const-c.inc
